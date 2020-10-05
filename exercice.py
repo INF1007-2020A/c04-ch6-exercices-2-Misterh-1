@@ -26,12 +26,7 @@ def color_name_to_hex(colors: list) -> list:
 
 def create_list() -> list:
     # TODO: Créer une liste des 10 000 premiers entiers positif, sauf pour les entiers de 15 à 350
-    liste = list()
-    for i in range(1, 15):
-        liste.append(i)
-    for j in range(351, 10337):
-        liste.append(j)
-    print(len(liste))
+    liste = [number for number in range(10000) if number < 15 or number > 350]
 
     return liste
 
